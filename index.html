@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
     <title>Document</title>
 </head>
 <body>
     <section class="main">
-        <img src="./image/черный.png" alt="черный" class="logo">
-        <div class="course_info"> 
+        <img src="./image/logo.png" alt="logo" class="logo">
+        
 
+        <div class="course_info"> 
+            
             <div>  <span class="title">старт</span>
                 <span class="subtitle">1 декабря</span>             
             </div> 
@@ -22,6 +25,7 @@
             </div>
         </div>
             <h1> HTML, CSS, JS</h1>
+
             <p>
                 Верстальщик – это специалист, который кодит страницы web-сайтов,
                 разбивает текст на отдельные страницы, компонует его с иллюстрациями. Он
@@ -31,34 +35,71 @@
             </p>
            <div>
         <button class="primary">Получить программу курса</button>
-        <button class="secondary">Записаться на курс</button>
+        <button class="secondar">Записаться на курс</button>
         </div>
      </section>
-     <section class="bg">
-    <h2>За 2 месяца ты станешь полноценным верстальщиком</h2>
-    <div class="sell_container">
-      <div class="">
-        <img src="./image/пункт_01.png" alt="">
-        <div class="time"></div>
-        <span></span>
+     <h2>Этот курс для тебя, если ты...</h2>
+     <div class="Photo">
+        <img src="./image/pic_memoji_01.png" alt="">
+        <img src="./image/описание_01.png" alt="">
      </div>
-     <div class="sell_card">
-        <div class="time"></div>
+     <div class="Photo">
+        <img src="./image/pic_memoji_02.png" alt="">
         <img src="./image/пункт_02.png" alt="">
-        <span></span>
      </div>
-     <div class="sell_card">
-        <div class="time"></div>
+     <div class="Photo">
+        <img src="./image/pic_memoji_03.png" alt="">
         <img src="./image/пункт_03.png" alt="">
      </div>
+     <div class="Photo">
+        <img src="./image/pic_memoji_04.png" alt="">
+        <img src="./image/пункт_04.png" alt="">
+     </div>
+     <section class="">
+    <h2>За 2 месяца ты станешь полноценным верстальщиком</h2>
+    <section class="sell_container">
+      <div class="">
+        <span>—  Обучаем с нуля
+            Начнешь с самых основ и 
+            будешь двигаться от простого к 
+            сложному, закрепляя каждый 
+            урок практикой</span>
+        <div class="time"></div>
+        <span>—  Помогаем лучшим студентам с трудоустройством
+            Лучших студентов мы рекомендуем в ведущие веб-студии Узбекистана</span>
+     </div>
+    </section>
+
+
+
+     <section class="bg">
+        <h2 class="sell">10% скидка действует</h2>
+     <div class="sell_container">
+        <div class="sell_card">
+        <div class="time">00</div>
+        <span>дней</span>
+     </div>
+     <div class="sell_card">
+     <div class="time">00</div>
+     <span>часов</span>
+     </div>
+     <div class="sell_card">
+     <div class="time">00</div>
+     <span>минут</span>
     </div>
-    <button class="secondary"></button>
+    <div class="sell_card">
+    <div class="time">00</div>
+    <span>секунды</span>
+   </div>
+</div>
+<h4 class="sale_text">Скидка закончилась</h4>
+<button class="secondary">Воспользоваться скидкой</button>
 </section>
-    
+
 
 
 <section class="legend">
-    <h3>А кто препадаёт</h3>
+    <h2>А кто препадаёт</h2>
     <div class="legendInfo">
         <img src="./image/pic_Roman-Ickov (1).png" alt="" class="legendPhoto">
         <div class="legendContainer">
@@ -84,7 +125,63 @@
             </div>
         </div>
     </div>
-</section>    
+</section>  
+<section>
+    <h1 class="name">ДИПЛОМ ОБ
+        ОКОНЧАНИЕ КУРСА
+    </h1>
+    <img class="img" src="./pic_diplom.png" alt="Диплом об окончании курса">
+            
+</section>
+<section >
+    <h2 class="Photoshoot">Все еще сомневаешься?</h2>
+    <p class="PhotoshootParagraph">Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+
+    <div class="splide splide2" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <div class="PhotoshootIMG">
+                        <img src="./image/JM_photo_101 1.png" alt="">
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="PhotoshootIMG">
+                        <img src="./image/JM_photo_153.png" alt="">
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <div class="PhotoshootIMG">
+                        <img src="./image/JM_photo_153 (1).png" alt="">
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+ </section>
+   
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var splide2 = new Splide('.splide2', {
+            perPage: 3,
+            gap: 30,
+            rewind: true,
+            arrows: false,
+            pagination: false,
+
+            breakpoints: {
+                900: {
+                    perPage: 1,
+                }
+            }
+        });
+        splide2.mount();
+    });
+</script>
+
 
 
 
@@ -96,4 +193,4 @@
 
     
 </body>
-</html>   
+</html>  
